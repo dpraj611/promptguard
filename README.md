@@ -38,7 +38,7 @@ The system combines **rule-based pattern scanning** with **fine-tuned DeBERTa-v3
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The cascade pipeline processes each input through up to 4 stages, with **early-exit** at any stage that reaches a confident verdict:
 
@@ -87,7 +87,7 @@ Every verdict is one of: **`INJECTION (1)`**, **`SAFE (0)`**, or **`UNCERTAIN (-
 
 ---
 
-## 📊 Benchmark Results
+##  Benchmark Results
 
 | Dataset | Samples | Accuracy | Precision | Recall | F1 |
 |:--------|--------:|---------:|----------:|-------:|---:|
@@ -110,7 +110,7 @@ Every verdict is one of: **`INJECTION (1)`**, **`SAFE (0)`**, or **`UNCERTAIN (-
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -180,7 +180,7 @@ Uses the text column from `utils/config.py` (`csv_prompt_column`, default `text`
 
 ---
 
-## ⚙️ Configuration & Tuning
+##  Configuration & Tuning
 
 All thresholds, model names, and cache parameters are centralised in [`utils/config.py`](utils/config.py). No changes needed anywhere else.
 
@@ -193,7 +193,7 @@ All thresholds, model names, and cache parameters are centralised in [`utils/con
 | `deep_inject_threshold` | 3 | 0.55 | Final-stage injection cutoff |
 | `cache_max_size` | 0 | 10,000 | Max LRU cache entries |
 
-> 📖 For detailed tuning guidance, see the [Technical Reference](docs/technical_reference.md).
+>  For detailed tuning guidance, see the [Technical Reference](docs/technical_reference.md).
 
 **Refresh evaluation dataset:**
 
@@ -204,7 +204,7 @@ python -m utils.dataset_downloader
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 PromptGuard-Cascade/
@@ -235,7 +235,7 @@ PromptGuard-Cascade/
 
 ---
 
-## 📚 References
+##  References
 
 - He, P., Liu, X., Gao, J., & Chen, W. (2021). [DeBERTa: Decoding-enhanced BERT with Disentangled Attention](https://arxiv.org/abs/2006.03654). *ICLR 2021*.
 - [ProtectAI prompt injection models](https://huggingface.co/protectai) on HuggingFace.
@@ -244,7 +244,7 @@ PromptGuard-Cascade/
 
 ---
 
-## 📝 Citation
+##  Citation
 
 If you use PromptGuard-Cascade in your research or project, please cite:
 
@@ -261,7 +261,7 @@ If you use PromptGuard-Cascade in your research or project, please cite:
 
 ---
 
-## 👤 Author
+##  Author
 
 <table>
   <tr>
@@ -292,5 +292,5 @@ If you use PromptGuard-Cascade in your research or project, please cite:
 </p>
 
 <p align="center">
-  <sub>Designed and developed with ❤️ by <a href="https://github.com/dpraj611">Dhruv Prajapati</a></sub>
+  <sub>Designed and developed by <a href="https://github.com/dpraj611">Dhruv Prajapati</a></sub>
 </p>
