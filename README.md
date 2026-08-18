@@ -25,7 +25,7 @@
 
 ---
 
-## 📋 Abstract
+##  Abstract
 
 **PromptGuard-Cascade** is an efficient, CPU-friendly detection system designed to identify prompt injection attacks against large language models. The core insight is a **4-stage cascade architecture** where each successive stage is more powerful but more expensive — and **only runs when the previous stage is uncertain**. This design keeps average inference latency low while maintaining high detection accuracy.
 
@@ -98,7 +98,7 @@ Every verdict is one of: **`INJECTION (1)`**, **`SAFE (0)`**, or **`UNCERTAIN (-
 
 ---
 
-## 🔬 Stage Details
+##  Stage Details
 
 | Stage | Module | Technique | Parameters | Avg. Latency |
 |:------|:-------|:----------|:-----------|:-------------|
